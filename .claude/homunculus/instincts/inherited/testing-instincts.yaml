@@ -1,0 +1,395 @@
+# Instincts generated from https://github.com/nhatcoi/testing
+# Generated: 2026-05-10T11:04:38.200Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: testing-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/nhatcoi/testing
+---
+
+# Testing Commit Length
+
+## Action
+
+Write moderate-length commit messages (~86 characters)
+
+## Evidence
+
+- Average commit message length: 86 chars
+- Based on 1 commits
+
+---
+id: testing-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/nhatcoi/testing
+---
+
+# Testing Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: testing-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/nhatcoi/testing
+---
+
+# Testing Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: testing-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/nhatcoi/testing
+---
+
+# Testing Export Style
+
+## Action
+
+Prefer mixed exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: mixed
+
+---
+id: testing-test-framework
+trigger: "when writing tests"
+confidence: 0.9
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/nhatcoi/testing
+---
+
+# Testing Test Framework
+
+## Action
+
+Use vitest as the test framework
+
+## Evidence
+
+- Test framework detected: vitest
+- File pattern: *.test.js
+
+---
+id: testing-test-naming
+trigger: "when creating a test file"
+confidence: 0.85
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/nhatcoi/testing
+---
+
+# Testing Test Naming
+
+## Action
+
+Name test files using the pattern: *.test.js
+
+## Evidence
+
+- File pattern: *.test.js
+- Consistent across test files
+
+---
+id: testing-test-types
+trigger: "when planning tests for a feature"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/nhatcoi/testing
+---
+
+# Testing Test Types
+
+## Action
+
+Write unit, integration tests to match project standards
+
+## Evidence
+
+- Test types detected: unit, integration
+- Coverage config: no
+
+---
+id: code-style-file-naming-camelCase
+trigger: "When creating a new file in the repository"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: nhatcoi/testing
+---
+
+# Code Style File Naming CamelCase
+
+## Action
+
+Name the file using camelCase convention
+
+## Evidence
+
+- Pattern: codeStyle.namingConventions.files = camelCase
+
+---
+id: code-style-function-naming-camelCase
+trigger: "When defining a new function"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: nhatcoi/testing
+---
+
+# Code Style Function Naming CamelCase
+
+## Action
+
+Use camelCase for the function name
+
+## Evidence
+
+- Pattern: codeStyle.namingConventions.functions = camelCase
+
+---
+id: code-style-class-naming-pascalCase
+trigger: "When defining a new class"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: nhatcoi/testing
+---
+
+# Code Style Class Naming PascalCase
+
+## Action
+
+Use PascalCase for the class name
+
+## Evidence
+
+- Pattern: codeStyle.namingConventions.classes = PascalCase
+
+---
+id: code-style-constant-naming-screaming-snake-case
+trigger: "When defining a constant"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: nhatcoi/testing
+---
+
+# Code Style Constant Naming Screaming Snake Case
+
+## Action
+
+Use SCREAMING_SNAKE_CASE for the constant name
+
+## Evidence
+
+- Pattern: codeStyle.namingConventions.constants = SCREAMING_SNAKE_CASE
+
+---
+id: code-style-imports-relative
+trigger: "When importing modules in code"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: nhatcoi/testing
+---
+
+# Code Style Imports Relative
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern: codeStyle.importStyle = relative
+
+---
+id: code-style-exports-mixed
+trigger: "When exporting modules or functions"
+confidence: 0.6
+domain: code-style
+source: repo-analysis
+source_repo: nhatcoi/testing
+---
+
+# Code Style Exports Mixed
+
+## Action
+
+Use either named or default exports as appropriate
+
+## Evidence
+
+- Pattern: codeStyle.exportStyle = mixed
+
+---
+id: testing-vitest-framework
+trigger: "When writing new tests for JavaScript/TypeScript code"
+confidence: 0.9
+domain: testing
+source: repo-analysis
+source_repo: nhatcoi/testing
+---
+
+# Testing Vitest Framework
+
+## Action
+
+Use the Vitest testing framework
+
+## Evidence
+
+- Pattern: testing.framework = vitest
+- react-test/vite.config.ts
+
+---
+id: testing-file-pattern
+trigger: "When naming a test file"
+confidence: 0.9
+domain: testing
+source: repo-analysis
+source_repo: nhatcoi/testing
+---
+
+# Testing File Pattern
+
+## Action
+
+Use the *.test.js file pattern
+
+## Evidence
+
+- Pattern: testing.filePattern = *.test.js
+
+---
+id: testing-unit-integration
+trigger: "When categorizing a test"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: nhatcoi/testing
+---
+
+# Testing Unit Integration
+
+## Action
+
+Classify the test as either unit or integration
+
+## Evidence
+
+- Pattern: testing.testTypes = [unit, integration]
+
+---
+id: testing-no-coverage-config
+trigger: "When configuring tests"
+confidence: 0.6
+domain: testing
+source: repo-analysis
+source_repo: nhatcoi/testing
+---
+
+# Testing No Coverage Config
+
+## Action
+
+Do not add code coverage configuration
+
+## Evidence
+
+- Pattern: testing.coverageConfig = false
+
+---
+id: error-handling-try-catch
+trigger: "When handling errors in code"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: nhatcoi/testing
+---
+
+# Error Handling Try Catch
+
+## Action
+
+Use try-catch blocks for error handling
+
+## Evidence
+
+- Pattern: errorHandling.style = try-catch
+
+---
+id: error-handling-custom-error-classes
+trigger: "When defining custom errors"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: nhatcoi/testing
+---
+
+# Error Handling Custom Error Classes
+
+## Action
+
+Implement custom error classes
+
+## Evidence
+
+- Pattern: errorHandling.customErrorClasses = true
+
+---
+id: git-commit-prefix-restructure
+trigger: "When restructuring code or folders"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: nhatcoi/testing
+---
+
+# Git Commit Prefix Restructure
+
+## Action
+
+Prefix the commit message with 'Restructure:'
+
+## Evidence
+
+- Pattern: commits.prefixes includes 'restructure'
+- Example: 'Restructure: springboot-test, nodejs-test (Express parity), react-test (Vite + Vitest)'
+
