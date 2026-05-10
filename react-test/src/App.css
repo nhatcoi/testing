@@ -1,0 +1,59 @@
+.app {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+  font-family: system-ui, sans-serif;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 0.75rem;
+}
+
+.meta {
+  color: #555;
+  font-size: 0.9rem;
+  margin: 0 0 1rem;
+}
+
+.loading {
+  color: #555;
+}
+
+.error {
+  color: #b00020;
+  margin: 0 0 0.75rem;
+}
+
+.hint {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.hint code {
+  font-size: 0.8rem;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 0.65rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.name {
+  font-weight: 500;
+}
+
+.detail {
+  font-size: 0.85rem;
+  color: #555;
+}
